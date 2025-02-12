@@ -13,7 +13,7 @@ We recommend using Python 3.9. ETGNN requires the following Python libraries:
 - `tqdm`
 - `scipy`
 - `yaml`
-- You can directly use the provided 'environment.yaml' to set up the environment.
+- You can directly use the provided `environment.yaml` to set up the environment.
 
 ## Usage
 ### Preparation of Hamiltonian Training Data
