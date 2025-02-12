@@ -67,7 +67,7 @@ The input parameters in config.yaml are divided into different modules, which ma
 The papers related to HamGNN:
 [[1] A General Tensor Prediction Framework Based on Graph Neural Networks](https://doi.org/10.1021/acs.jpclett.3c01200)
 
-Appendix: Expressions for tensor output</font>
+## Appendix: Expressions for tensor output</font>
 <font face="Times New Roman" size=4>&emsp;one-order tensor:</font>
 $$\vec{F_j}=\sum_{k\in{N(j)}} E_{kj} \vec{e_{kj}}$$
 <font face="Times New Roman" size=4>&emsp;two-order tensor:</font>
