@@ -23,11 +23,11 @@ We recommend using Python 3.9. ETGNN requires the following Python libraries:
    
 ### Network Training and prediciton
 1. **Configure the Network**: Set the appropriate parameters in the `config.yaml` file for network and training configurations.
-2. **Train network**: Run the training process with:'python .../main.py' in the working directory.
-3. **Monitor Training**: Use TensorBoard to track training progress: 'tensorboard --logdir train_dir'
+2. **Train network**: Run the training process with:`python .../main.py` in the working directory.
+3. **Monitor Training**: Use TensorBoard to track training progress: `tensorboard --logdir train_dir`
 4. **Prediction**: After completing the training process, the model can be used to make predictions. Follow these steps:
 - Set `checkpoint_path` in `config.yaml` to the trained model's path and `stage` to `test`.
-- -Run 'python .../main.py' in the predciton directory.
+- -Run `python .../main.py` in the predciton directory.
 
 
 ## Code contributors:
