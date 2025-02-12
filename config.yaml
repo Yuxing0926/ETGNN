@@ -1,0 +1,85 @@
+dataset_params:
+  batch_size: 60
+  crystal_path: /data/home/yzhong/Born_LGNN/test_SiO2
+  file_type: poscar
+  graph_data_path: /data/home/yzhong/Born_LGNN/test_SiO2
+  id_prop_path: /data/home/yzhong/Born_LGNN/test_SiO2
+  max_num_nbr: 32
+  radius: 6.0
+  rank_tensor: 2
+  test_ratio: 0.2
+  train_ratio: 0.6
+  val_ratio: 0.2
+  split_file: null
+ETGNN:
+  activation: elu
+  basis_emb_size: 8
+  cutoff: 6.0
+  cutoff_triplet: 4.0
+  envelope_exponent: 6
+  hidden_channels: 128
+  int_emb_size: 64
+  num_after_skip: 2
+  num_before_skip: 1
+  num_blocks: 4
+  num_radial: 8
+  num_spherical: 8
+  num_node_features: 64
+  num_triplet_features: 128
+  num_residual_triplet: 2
+  export_triplet: true
+  cutoff_func: cos
+  rbf_func: bessel
+losses_metrics:
+  losses:
+  - metric: mse
+    loss_weight: 1.0
+  - metric: cosine_similarity
+    loss_weight: 0.0
+  - metric: sum_zero
+    loss_weight: 0.0
+  - metric: Euclidean_loss
+    loss_weight: 0.0
+  metrics:
+  - mae
+optim_params:
+  lr: 0.0005
+  lr_decay: 0.5
+  lr_patience: 5
+  min_epochs: 100
+  max_epochs: 500
+  stop_patience: 30
+painn:
+  activation: silu
+  cutoff: 6.0
+  cutoff_func: cos
+  edge_build_mode: 1
+  ledge_bias: true
+  lnode_bias: true
+  lup_edge_ns: true
+  lup_edge_nv: true
+  lup_triplet_ns: true
+  lup_triplet_nv: true
+  luse_triplet: false
+  n_edge_features: 128
+  n_interactions: 3
+  num_node_features: 128
+  triplet_build_mode: 1
+  triplet_feature_len: 128
+  use_batch_norm: true
+profiler_params:
+  progress_bar_refresh_rat: 1
+  train_dir: train_data_test_ETGNN
+setup:
+  accelerator: 
+  resume: false
+  checkpoint_path: /data/home/yzhong/Born_LGNN/train_data_ETGNN/version_13/checkpoints/epoch=346-val_loss=0.000000.ckpt
+  l_pred_atomwise_tensor: true
+  l_pred_crystal_tensor: false
+  l_minus_mean: false
+  num_gpus:
+  - 1
+  precision: 32
+  property: born
+  stage: test
+  ignore_warnings: true
