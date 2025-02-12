@@ -15,7 +15,6 @@ We recommend using Python 3.9. ETGNN requires the following Python libraries:
 - `yaml`
 - You can directly use the provided 'environment.yaml' to set up the environment.
 
-
 ## Usage
 ### Preparation of Hamiltonian Training Data
 1. **Generate Structure Files**: Create structure files (e.g., POSCAR or CIF) via molecular dynamics or random perturbation.
@@ -27,7 +26,7 @@ We recommend using Python 3.9. ETGNN requires the following Python libraries:
 3. **Monitor Training**: Use TensorBoard to track training progress: `tensorboard --logdir train_dir`
 4. **Prediction**: After completing the training process, the model can be used to make predictions. Follow these steps:
 - Set `checkpoint_path` in `config.yaml` to the trained model's path and `stage` to `test`.
-- -Run `python .../main.py` in the predciton directory.
+- Run `python .../main.py` in the predciton directory.
 
 
 ## Code contributors:
