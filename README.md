@@ -40,8 +40,8 @@ The input parameters in config.yaml are divided into different modules, which ma
     + `checkpoint_path`: Path of the checkpoint from which training is resumed (`stage` = 'fit') or path to the checkpoint you wish to test (`stage` = 'test').
 + `dataset_params`:
     + `crystal_path`: Directory for storing crystal structure files.
-    + `file_type`: The type of crystal structure, cif file ('cif') or POSCAR format file ('poscar').
-    + `graph_data_path`: The directory where the processed compressed graph data files are stored. If there is already a file named 'grah_data.npz' in this directory, the program will directly read this file to construct the dataset.
+    + `file_type`: The type of crystal structure, cif file (`cif`) or POSCAR format file (`poscar`).
+    + `graph_data_path`: The directory where the processed compressed graph data files are stored. If there is already a file named `grah_data.npz` in this directory, the program will directly read this file to construct the dataset.
     + `id_prop_path`: The path of the `id_prop.csv` file that saves the id and property of each crystal structure.
     + `max_num_nbr`: The maximum number of neighbors of each node when generating graph data of the crystal structures.
     + `radius`: Maximum cutoff radius of each node.
