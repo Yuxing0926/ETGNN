@@ -1,5 +1,11 @@
-# ETGNN
-A General Tensor Prediction Framework Based on Graph Neural Networks
+# Edge-Based Tensor Prediction Graph Neural Network (ETGNN)
+ETGNN is a novel graph neural network (GNN) framework designed to predict tensorial properties of molecules and materials while preserving rotational equivariance. Traditional invariant GNNs struggle with directional properties, limiting their effectiveness in predicting higher-order tensors. ETGNN overcomes this limitation by introducing an edge-based tensor decomposition, where tensors are expressed as a linear combination of local spatial components projected onto edge directions within atomic clusters.
+
+## Key Features:
+- Rotational Equivariance: The framework ensures that tensor predictions transform correctly under coordinate system changes.
+- Scalability & Accuracy: It can predict tensors from first to third order with high precision, outperforming state-of-the-art models in force, dipole moment, polarizability, chemical shift, Born effective charge (BEC), dielectric, and piezoelectric tensor predictions.
+- Edge-Based Expansion: Instead of relying on complex spherical harmonic transformations, ETGNN decomposes tensorial properties using local edge-based geometric information, allowing seamless integration into existing GNN architectures.
+- Inspired by DimeNet++: The network architecture extends DimeNet++ by incorporating triplet messages to enhance feature representation and prediction accuracy.
 
 ## Requirements
 We recommend using Python 3.9. ETGNN requires the following Python libraries:
