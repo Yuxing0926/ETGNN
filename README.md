@@ -36,4 +36,4 @@ We recommend using Python 3.9. ETGNN requires the following Python libraries:
 
 ## References
 The papers related to HamGNN:
-[[1] A General Tensor Prediction Framework Based on Graph Neural Networks](https://doi.org/10.1038/s41524-023-01130-4)
+[[1] A General Tensor Prediction Framework Based on Graph Neural Networks](https://doi.org/10.1021/acs.jpclett.3c01200)
