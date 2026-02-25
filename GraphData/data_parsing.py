@@ -1,11 +1,3 @@
-"""
-/*
- * @Author: Yang Zhong 
- * @Date: 2021-10-07 20:30:29 
- * @Last Modified by: Yang Zhong
- * @Last Modified time: 2021-10-29 15:52:53
- */
-"""
 import numpy as np
 import torch
 from tqdm import tqdm
@@ -116,3 +108,4 @@ if __name__ == '__main__':
 
     config = read_config(config_file_name='config.yaml')
     cif_parse(config)
+
